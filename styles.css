@@ -1,0 +1,121 @@
+:root {
+    --paper-width: 210mm;
+    /* A4 width */
+    --paper-height: 297mm;
+    /* A4 height */
+    --gutter: 8mm;
+    /* inner padding */
+    --muted: #6b7280;
+    --body-bg: #f0f2f5;
+}
+
+.stage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+/* the paper itself */
+.paper {
+    width: var(--paper-width);
+    height: var(--paper-height);
+    background: white;
+    box-shadow: 0 10px 30px rgba(16, 24, 40, 0.12);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 6px;
+    padding: var(--gutter);
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+header {
+    margin: auto;
+    /* background-color: aqua; */
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    text-align: center;
+}
+
+nav>p {
+    margin-top: 8px;
+}
+
+hr {
+    margin-top: 0;
+}
+
+article {
+    margin-bottom: 8px;
+}
+
+article>span {
+    font-size: larger;
+}
+
+
+#section {
+    font-size: large;
+}
+
+ul#skills {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem 1rem;
+    /* row gap, column gap */
+    list-style: inside;
+    padding: 0;
+    margin: 0;
+}
+
+#title-and-date {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    /* background-color: #0b63d6; */
+}
+
+#title-and-date span:first-child {
+    white-space: nowrap;
+}
+
+#title-and-date span:nth-child(2) {
+    justify-self: end;
+    /* align horizontally to end of its grid cell */
+}
+
+#date {
+    font-style: italic;
+}
+
+.skills>p:first-of-type,
+.experience>p:first-of-type,
+.education>p:first-of-type {
+    margin-top: 0;
+    font-style: italic;
+    margin: 0 0 5px 0;
+    padding: 0;
+
+}
+
+.skills,
+.experience,
+.education {
+    margin-bottom: 20px;
+}
+
+.tasks {
+    /* background-color: blue; */
+    margin: 0;
+    padding-left: 20px;
+    list-style-position: outside;
+}
