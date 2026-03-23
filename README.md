@@ -4,3 +4,7 @@ Why not just use word?
 Because it's boring and who wants to deal with line breaks.
 
 Made with vanila HTML and CSS. 
+
+Here's the site hosted using Github Pages: https://dssrts.github.io/MMiranda-Resume/
+
+Note: Not yet mobile responsive.
